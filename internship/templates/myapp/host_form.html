@@ -1,0 +1,16 @@
+{% extends 'home.html' %}
+{% block content %}
+{% load bootstrap3 %}
+
+<h1 style="font-family: 'Josefin Sans', sans-serif;" >Create New Host</h1>
+    <form class="post-form"  method="POST">
+          {% csrf_token %}
+          {% bootstrap_form form %}
+          <button type="submit" class="btn btn-primary">Create Host</button>
+
+    </form>
+
+
+
+
+{% endblock %}

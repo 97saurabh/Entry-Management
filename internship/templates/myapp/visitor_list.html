@@ -1,0 +1,39 @@
+{% extends 'home.html' %}
+{% block content %}
+
+
+<ul class="list-group" style="font-family: 'Josefin Sans', sans-serif;">
+    <li><h1 style="margin-left:10em;">Visited Visitors</h1></li>
+</ul>
+  <hr>
+  <table  border="1" style="padding: 15px; border-spacing: 5px;font-family: 'Abel', sans-serif;" class="table table-hover">
+                    <tr style="text-align:center;">
+                      <th scope="col">Date</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Contact No</th>
+                      <th scope="col">Visited Place</th>
+                      <th scope="col">Check In</th>
+                      <th scope="col">Check Out</th>
+                    </tr>
+
+                    {% for i in visit %}
+                    <tr style="text-align:center;">
+                      <td>{{ i.date }}</td>
+                      <td>{{ i.visitor_name }}</td>
+                      <td>{{ i.phone_no }}</td>
+                      <td>{{ i.host.host_name }}</td>
+                      <td>{{ i.check_in }}</td>
+                      {% if i.check_out == None %}
+                      <td><a href="{% url 'myapp:checked' pk=i.pk %}">Check Out</a></td>
+                      {% else %}
+                      <td>{{ i.check_out }}</td>
+                      {% endif %}
+                    </tr>
+
+                    {% endfor %}
+  </table>
+
+
+
+
+{% endblock %}

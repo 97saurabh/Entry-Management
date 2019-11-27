@@ -1,0 +1,19 @@
+{% extends 'home.html' %}
+{% block content %}
+{% load bootstrap3 %}
+<div class="jumbotron">
+
+    <h2 style="font-family: 'Josefin Sans', sans-serif;">Please Login:</h2>
+    {% if form.errors %}
+    <p>Your usename and password didn't match</p>
+    {% endif %}
+
+    <form class="" action="{% url 'login' %}" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    <input type="submit" name="" value="LogIn" class="btn btn-primary">
+
+
+    </form>
+</div>
+{% endblock %}
