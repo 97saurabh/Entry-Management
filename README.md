@@ -48,6 +48,13 @@ EMAIL_HOST_USER = 'example@gmail.com'
 [Link](https://myaccount.google.com/security)
 In the given Link, in the less secure App section, turn it on.
 ![GitHub Logo](/internship/images/Google.png)
+
+API of TexyLocal to send text message
+
+
+# ScreenShot
+
+
 ## Visitor Form
 ![GitHub Logo](/internship/images/visit_form.png)
 ## List Of Visitors
