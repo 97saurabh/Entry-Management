@@ -49,7 +49,7 @@ EMAIL_HOST_USER = 'example@gmail.com'
 In the given Link, in the less secure App section, turn it on.
 ![GitHub Logo](/internship/images/Google.png)
 
-API of TexyLocal to send text message
+API of TextLocal to send text message
 
 
 # ScreenShot
