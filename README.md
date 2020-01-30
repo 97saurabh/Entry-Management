@@ -58,12 +58,8 @@ API of TextLocal to send text message
 
 ## Visitor Form
 ![GitHub Logo](/internship/images/visit_form.png)
-## List Of Visitors
-![GitHub Logo](/internship/images/visit_list.png)
 ## Host Form
 ![GitHub Logo](/internship/images/host_form.png)
-## List Of Hosts
-![GitHub Logo](/internship/images/host.png)
 
 ## SMS screenshot:
 ![GitHub Logo](/internship/images/msg_screenshot.jpeg)
